@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.card {
+    background: #e7f3ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #b3d7ff;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.card p, .card ul {
+    margin: 10px 0;
+}
+
+.card a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.explanation {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.previous-button {
+    background-color: #6c757d;
+}
+
+button.previous-button + button {
+    margin-left: 10px;
+}
+
+button:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,18 @@
+Instructions to Run the Code
+1. Ensure all files are in the same directory:
+
+purchase-agreement-form/
+├── index.html
+├── styles.css
+├── script.js
+└── California-Residential-Purchase-pag1.pdf
+
+2. Start a local server using Python:
+
+Open a terminal or command prompt, navigate to the directory containing your files, and start a local server:
+
+python -m http.server 8000
+
+3. Open the local server in your browser:
+
+Navigate to http://localhost:8000 in your web browser.

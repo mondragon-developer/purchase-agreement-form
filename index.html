@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Residential Purchase Agreement</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>California Residential Purchase Agreement</h1>
+        <div class="instructions-card">
+            <h2>Instructions</h2>
+            <p>Please fill out each section of the form accurately. Use the "Next" and "Previous" buttons to navigate through the steps. Once all fields are completed, click the "Open PDF" button to generate a filled-out PDF of the first page of the California Residential Purchase Agreement.</p>
+            <p>If you have any questions, please contact us at:</p>
+            <p>Email: <a href="mailto:help@realtor.com">help@realtor.com</a></p>
+            <p>Phone: 954-111-1111</p>
+        </div>
+        <form id="purchase-agreement-form">
+            <div class="step">
+                <label for="date-prepared">Date Prepared:</label>
+                <input type="date" id="date-prepared" name="date-prepared" required>
+                <p class="explanation">Enter the date this offer is prepared.</p>
+                <button type="button" class="next-button">Next</button>
+            </div>
+            <div class="step">
+                <label for="buyer-name">Buyer's Name:</label>
+                <input type="text" id="buyer-name" name="buyer-name" required>
+                <p class="explanation">Enter the full name of the buyer. Example: John Doe</p>
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </div>
+            <div class="step">
+                <label for="property-address">Property Address:</label>
+                <input type="text" id="property-address" name="property-address" placeholder="1234 Main Street, Anytown, CA 12345" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <label for="county">County:</label>
+                <input type="text" id="county" name="county" required>
+                <label for="zip-code">Zip Code:</label>
+                <input type="text" id="zip-code" name="zip-code" required>
+                <label for="parcel-number">Assessor's Parcel Number:</label>
+                <input type="text" id="parcel-number" name="parcel-number" required>
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </div>
+            <div class="step">
+                <label for="purchase-price">Purchase Price:</label>
+                <input type="number" id="purchase-price" name="purchase-price" required>
+                <p class="explanation">Enter the purchase price offered. Example: 500000</p>
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next
+                </div>
+                <div class="step">
+                    <label for="close-of-escrow">Close of Escrow:</label>
+                    <input type="date" id="close-of-escrow" name="close-of-escrow" required>
+                    <p class="explanation">Enter the date the escrow closes.</p>
+                    <button type="button" class="previous-button">Previous</button>
+                    <button type="button" class="next-button">Next</button>
+                </div>
+                <div class="step">
+                    <label for="listing-agent">Listing Agent:</label>
+                    <input type="text" id="listing-agent" name="listing-agent" required>
+                    <label for="listing-agent-type">Listing Agent Type:</label>
+                    <select id="listing-agent-type" name="listing-agent-type" required>
+                        <option value="seller">Seller exclusively</option>
+                        <option value="both">Both Buyer and Seller</option>
+                    </select>
+                    <label for="selling-agent">Selling Agent:</label>
+                    <input type="text" id="selling-agent" name="selling-agent" required>
+                    <label for="selling-agent-type">Selling Agent Type:</label>
+                    <select id="selling-agent-type" name="selling-agent-type" required>
+                        <option value="buyer">Buyer exclusively</option>
+                        <option value="seller">Seller exclusively</option>
+                        <option value="both">Both Buyer and Seller</option>
+                    </select>
+                    <button type="button" class="previous-button">Previous</button>
+                    <button type="button" class="next-button">Next</button>
+                </div>
+                <div class="step">
+                    <label for="balance-of-down-payment">Balance of Down Payment or Purchase Price:</label>
+                    <input type="number" id="balance-of-down-payment" name="balance-of-down-payment" required>
+                    <p class="explanation">Enter the balance of down payment or purchase price. Example: 150000</p>
+                    <button type="button" class="previous-button">Previous</button>
+                    <button type="button" id="open-pdf">Open PDF</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
+    
